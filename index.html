@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>StudioBook — shoot bookings, milestone payments & album deadlines for photographers</title>
+  <meta name="description" content="Track wedding & event shoot bookings, split payments into milestones, chase album-delivery deadlines and send WhatsApp reminders — built for Indian photo & video studios. Book a discovery call." />
+  <meta name="keywords" content="photography studio management software, wedding photographer bookings, shoot payment tracking, album delivery deadline, milestone payments, videographer CRM India, studio booking software" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <link rel="canonical" href="https://sreenivas-sadhu-prabhakara.github.io/studiobook-site/" />
+  <meta name="theme-color" content="#e11d48" />
+  <meta name="author" content="KARYA" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KARYA" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:title" content="StudioBook — shoot bookings, milestone payments & album deadlines for photographers" />
+  <meta property="og:description" content="Track wedding & event shoot bookings, split payments into milestones, chase album-delivery deadlines and send WhatsApp reminders — built for Indian photo & video studios." />
+  <meta property="og:url" content="https://sreenivas-sadhu-prabhakara.github.io/studiobook-site/" />
+  <meta property="og:image" content="https://sreenivas-sadhu-prabhakara.github.io/studiobook-site/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="StudioBook — shoot bookings, milestone payments and album-delivery deadlines on autopilot for photo & video studios." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="StudioBook — shoot bookings, milestone payments & album deadlines for photographers" />
+  <meta name="twitter:description" content="Track wedding & event shoot bookings, split payments into milestones, chase album-delivery deadlines and send WhatsApp reminders — built for Indian photo & video studios." />
+  <meta name="twitter:image" content="https://sreenivas-sadhu-prabhakara.github.io/studiobook-site/og.png" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="https://sreenivas-sadhu-prabhakara.github.io/studiobook-site/og.png" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kaarya-bench.pages.dev/#org",
+        "name": "KARYA",
+        "url": "https://kaarya-bench.pages.dev/",
+        "email": "sreeni.nintendo@gmail.com"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://sreenivas-sadhu-prabhakara.github.io/studiobook-site/#website",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/studiobook-site/",
+        "name": "StudioBook",
+        "inLanguage": "en-IN",
+        "publisher": { "@id": "https://kaarya-bench.pages.dev/#org" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "StudioBook",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/studiobook-site/",
+        "image": "https://sreenivas-sadhu-prabhakara.github.io/studiobook-site/og.png",
+        "description": "Studio booking and delivery tracker for Indian wedding & event photographers and videographers — book a shoot, split the package into payment milestones (advance, shoot-day, album balance), track deliverables with delivery deadlines, and send WhatsApp reminders for pending balances and overdue albums.",
+        "inLanguage": ["en-IN", "hi-IN"],
+        "areaServed": { "@type": "Country", "name": "India" },
+        "audience": { "@type": "BusinessAudience" },
+        "provider": { "@type": "Organization", "name": "KARYA" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "description": "Subscription — pricing shared on a discovery call"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does StudioBook actually send the WhatsApp reminders?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "StudioBook drafts each reminder — personalised, with the client's name, the pending balance or the album deadline — and stages it in your outbox. You send it from your own number with a tap, so it always reads like it came from you, not a robot."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do payment milestones work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every booking's package is split into milestones — typically a booking advance, a shoot-day payment and an album-delivery balance — each with its own due date and paid amount. Record a payment (UPI or cash) and the milestone clears; the outstanding balance updates instantly across the dashboard."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can it track album and reel delivery deadlines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Each booking carries its deliverables — edited photos, the album, reels — with a delivery deadline. The dashboard surfaces what's due soon and flags any album that has gone overdue, so a delivery never quietly slips past its date."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I run a small studio. Is this overkill?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's built for exactly that — a solo photographer or a small team juggling a dozen live weddings. Add each booking once and StudioBook keeps the whole pipeline: who's paid what, which album is due, and who needs a nudge today."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does it cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pricing is worked out on a quick discovery call and billed monthly on subscription. We're keeping public prices off the page while we onboard our first studios."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "KARYA · On the Bench",
+            "item": "https://kaarya-bench.pages.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "StudioBook",
+            "item": "https://sreenivas-sadhu-prabhakara.github.io/studiobook-site/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="StudioBook home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" role="img" aria-label="StudioBook logo">
+            <rect x="3" y="6" width="26" height="20" rx="3" fill="#e11d48"/>
+            <rect x="3" y="6" width="26" height="6" rx="3" fill="#9f1239"/>
+            <circle cx="16" cy="18" r="5.5" fill="#F7F3F4"/>
+            <circle cx="16" cy="18" r="2.6" fill="#e11d48"/>
+          </svg>
+        </span>
+        <span class="brand__name">Studio<span class="brand__book">Book</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#problem">The problem</a>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#preview">Preview</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a href="mailto:sreeni.nintendo@gmail.com?subject=Discovery%20call%20—%20StudioBook" class="btn btn--sm">Book a discovery call</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Bookings, payments &amp; deliveries — in one book</p>
+          <h1 class="hero__title" id="hero-title">Every shoot,<br /><span class="accent-word">paid and delivered.</span></h1>
+          <p class="hero__pain">
+            The shoot was gorgeous. Then the advance, the shoot-day balance and
+            the album deadline all live in your head and a WhatsApp thread.
+            StudioBook holds every booking — who's paid what, and which album is
+            due — so nothing slips after the wedding.
+          </p>
+          <div class="hero__cta">
+            <a href="#how" class="btn btn--lg">See how a booking flows &rarr;</a>
+            <a href="#preview" class="btn-link">Peek at the dashboard</a>
+          </div>
+          <p class="hero__note"><span class="dot"></span>For wedding &amp; event photographers and videographers · subscription · pricing on discovery</p>
+        </div>
+
+        <!-- SIGNATURE WIDGET: live booking card -->
+        <aside class="register" aria-label="Live booking card demo">
+          <div class="register__head">
+            <div>
+              <p class="register__label">Booking · wedding</p>
+              <p class="register__month" id="reg-couple">Sameer &amp; Pooja</p>
+            </div>
+            <span class="register__pill">Live</span>
+          </div>
+          <ul class="register__rows" id="reg-rows">
+            <li class="reg-row" data-state="paid">
+              <span class="reg-row__name">Booking advance <em>· due on booking</em></span>
+              <span class="reg-row__amt">Rs 85,000</span>
+              <span class="reg-row__tag tag--paid">Paid</span>
+            </li>
+            <li class="reg-row" data-state="paid">
+              <span class="reg-row__name">Shoot-day balance <em>· wedding day</em></span>
+              <span class="reg-row__amt">Rs 1,70,000</span>
+              <span class="reg-row__tag tag--paid">Paid</span>
+            </li>
+            <li class="reg-row" data-state="due">
+              <span class="reg-row__name">Album delivery <em>· final balance</em></span>
+              <span class="reg-row__amt">Rs 85,000</span>
+              <span class="reg-row__tag tag--due" id="reg-live-tag">Balance due</span>
+            </li>
+          </ul>
+          <div class="register__foot">
+            <div class="regstat">
+              <span class="regstat__label">Collected</span>
+              <span class="regstat__val regstat__val--in" id="reg-collected">Rs 2,55,000</span>
+            </div>
+            <div class="regstat">
+              <span class="regstat__label">Album due in</span>
+              <span class="regstat__val regstat__val--out" id="reg-pending">6 days</span>
+            </div>
+          </div>
+          <p class="register__caption" id="reg-caption">Album deadline approaching → StudioBook stages a WhatsApp nudge.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section" id="problem" aria-label="The problem">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">01 · The problem</p>
+        <div class="two-col">
+          <h2 class="section__title">You shoot the wedding.<br />The follow-up shoots you.</h2>
+          <div class="prose">
+            <p>
+              You booked twelve weddings this season. Each one is an advance, a
+              shoot-day balance, an album deadline and a client who'll ask "photos
+              kab tak?" — and it all lives in <strong>a chat thread, a notes app,
+              and your memory</strong>. All three quietly leak.
+            </p>
+          </div>
+        </div>
+
+        <div class="pain-grid">
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">💸</span>
+            <h3>The final balance is easy to forget</h3>
+            <p>Advance came in months ago. The album-delivery balance is the one you actually forget to collect — you hand over the album and the last payment just... drifts.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">📅</span>
+            <h3>Album deadlines slip silently</h3>
+            <p>"Four to six weeks" turns into three months. There's no single list telling you which albums are due this week and which have already gone overdue.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">🧵</span>
+            <h3>Every shoot is a separate WhatsApp thread</h3>
+            <p>Ten live weddings, ten scattered chats. Reconstructing who's paid what and what you still owe them means scrolling through months of messages.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">📸</span>
+            <h3>You're an artist, not an accounts clerk</h3>
+            <p>The part you love is the shoot and the edit. Chasing balances and deadlines is the part that eats your evenings and dents client goodwill.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSIGHT ============ -->
+    <section class="insight" id="insight" aria-label="The insight">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--light">02 · The insight</p>
+        <blockquote class="insight__quote">
+          A shoot isn't one payment on one day — it's a <span class="hl">timeline</span>:
+          advance, shoot-day, album balance, each with its own deadline — yet
+          it's tracked <span class="hl">in your head</span>.
+        </blockquote>
+        <p class="insight__punch">
+          StudioBook's whole job is to make that timeline the app: book the shoot,
+          split it into <strong>milestones and deliverables with dates</strong>,
+          and let it chase the balances and album deadlines for you — so the money
+          and the album both land, without you being the reminder.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how" aria-label="How it works">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">03 · How it works</p>
+        <h2 class="section__title">Book it once. StudioBook tracks it to delivery.</h2>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n">1</span>
+            <div>
+              <h3>Book the shoot</h3>
+              <p>Add the client, event type, shoot date, venue and package amount. One card now holds the whole engagement, start to album.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">2</span>
+            <div>
+              <h3>Split it into payment milestones</h3>
+              <p>Booking advance, shoot-day payment, album-delivery balance — each with a due date and a paid amount. Record a payment and the balance updates.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">3</span>
+            <div>
+              <h3>Track the deliverables</h3>
+              <p>Edited photos, the album, reels — each with a delivery deadline. StudioBook surfaces what's due soon and flags anything overdue.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">4</span>
+            <div>
+              <h3>Send the nudge on WhatsApp</h3>
+              <p>A pending balance or an approaching album deadline drafts a reminder to your outbox — ready to send from your own number with a tap.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section section--tint" id="features" aria-label="What's inside">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">04 · What's inside</p>
+        <h2 class="section__title">Your whole shoot pipeline, in one book.</h2>
+
+        <div class="feat-grid">
+          <article class="feat">
+            <h3>Shoot bookings</h3>
+            <p>Client, event type, shoot date, venue and package amount on one card — every live wedding and event in a single list.</p>
+          </article>
+          <article class="feat">
+            <h3>Payment milestones</h3>
+            <p>Split each package into a booking advance, shoot-day and album balance, each with its own due date and paid amount.</p>
+          </article>
+          <article class="feat">
+            <h3>Record payments</h3>
+            <p>Mark a milestone paid by UPI or cash. The outstanding balance recalculates instantly across the booking and the dashboard.</p>
+          </article>
+          <article class="feat">
+            <h3>Deliverable deadlines</h3>
+            <p>Edited photos, album and reels each carry a delivery deadline — so nothing due this week hides behind an old booking.</p>
+          </article>
+          <article class="feat">
+            <h3>Overdue album flag</h3>
+            <p>An album past its deadline turns red on the dashboard and stops being a thing you only remember when the client asks.</p>
+          </article>
+          <article class="feat">
+            <h3>WhatsApp reminders</h3>
+            <p>Pending balances and approaching or overdue album deadlines draft a personalised nudge straight to your outbox.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT PREVIEW ============ -->
+    <section class="section" id="preview" aria-label="The dashboard">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">05 · The dashboard</p>
+        <h2 class="section__title">Open it Monday. See every shoot's money and deadline.</h2>
+
+        <div class="screen" role="img" aria-label="StudioBook dashboard preview showing 6,45,000 rupees collected and 3,10,000 rupees pending, upcoming shoots, deliverables due and one overdue album.">
+          <!-- browser chrome -->
+          <div class="screen__bar">
+            <span class="screen__dot"></span><span class="screen__dot"></span><span class="screen__dot"></span>
+            <span class="screen__url">app.studiobook.in / Aperture Studios</span>
+          </div>
+
+          <div class="screen__body">
+            <div class="screen__topline">
+              <div>
+                <p class="screen__hello">Namaste, Aditya ji</p>
+                <p class="screen__sub">Aperture Studios · 8 live bookings · 21 Jul 2026</p>
+              </div>
+              <span class="screen__tag">Reminders staged &middot; 3</span>
+            </div>
+
+            <!-- KPI cards -->
+            <div class="kpis">
+              <div class="kpi kpi--in">
+                <p class="kpi__label">Collected</p>
+                <p class="kpi__val">Rs 6,45,000</p>
+                <div class="kpi__bar"><span style="width:68%"></span></div>
+                <p class="kpi__meta">across 8 bookings</p>
+              </div>
+              <div class="kpi kpi--out">
+                <p class="kpi__label">Pending balance</p>
+                <p class="kpi__val">Rs 3,10,000</p>
+                <div class="kpi__bar kpi__bar--out"><span style="width:32%"></span></div>
+                <p class="kpi__meta">5 milestones open</p>
+              </div>
+              <div class="kpi kpi--flat">
+                <p class="kpi__label">Albums overdue</p>
+                <p class="kpi__val">1</p>
+                <p class="kpi__meta">Rahane Family · 15 days late</p>
+              </div>
+            </div>
+
+            <!-- bookings table -->
+            <div class="tablecard">
+              <div class="tablecard__head">
+                <p>Bookings &amp; deliveries</p>
+                <span class="tablecard__hint">reminders auto-staged</span>
+              </div>
+              <div class="tablescroll">
+                <table class="dtable">
+                  <thead>
+                    <tr>
+                      <th>Client</th><th>Event</th><th class="num">Balance</th><th>Deliverable</th><th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Roshan &amp; Neha</td><td>Wedding</td>
+                      <td class="num">2,13,750</td><td>Album</td>
+                      <td><span class="s s--due">Shoot in 3 days</span></td>
+                    </tr>
+                    <tr>
+                      <td>Sameer &amp; Pooja</td><td>Wedding</td>
+                      <td class="num">85,000</td><td>Album</td>
+                      <td><span class="s s--due">Album due · 6 days</span></td>
+                    </tr>
+                    <tr>
+                      <td>Aditya &amp; Meera</td><td>Wedding</td>
+                      <td class="num">65,000</td><td>Album</td>
+                      <td><span class="s s--paid">Photos delivered</span></td>
+                    </tr>
+                    <tr>
+                      <td>Rahane Family</td><td>Wedding</td>
+                      <td class="num">1,02,500</td><td>Album</td>
+                      <td><span class="s s--over">Album 15 days overdue</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section section--tint" id="pricing" aria-label="Pricing">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">06 · Pricing</p>
+        <div class="price-wrap">
+          <div class="price-copy">
+            <h2 class="section__title">Simple subscription. However many shoots you run.</h2>
+            <p class="prose">
+              If StudioBook catches <strong>one forgotten album balance a season</strong>
+              that would otherwise have drifted, it's already paid for itself many
+              times over — and you've bought back the evenings you spend chasing
+              payments and deadlines.
+            </p>
+            <ul class="price-includes">
+              <li>Unlimited bookings &amp; clients</li>
+              <li>Milestone payments + record UPI / cash</li>
+              <li>Deliverable deadlines + overdue album flag</li>
+              <li>WhatsApp reminders for balances &amp; deadlines</li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <p class="price-card__eyebrow">StudioBook</p>
+            <p class="price-card__amt" style="font-size:34px;">Pricing on discovery</p>
+            <p class="price-card__line">Subscription basis</p>
+            <p class="prose" style="color:color-mix(in srgb, var(--paper) 82%, transparent);margin:0 0 22px;">
+              We set pricing on a short discovery call and bill it as a simple monthly
+              subscription — sized to how many shoots you run. Early studios get founder terms.
+            </p>
+            <a href="mailto:sreeni.nintendo@gmail.com?subject=Discovery%20call%20—%20StudioBook" class="btn btn--lg btn--block">Book a discovery call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO + FAQ ============ -->
+    <section class="section" id="faq" aria-label="Who it's for and frequently asked questions">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">07 · Who it's for &amp; questions</p>
+        <div class="who-grid">
+          <div class="who">
+            <h2 class="section__title section__title--sm">Built for the studio that shoots, not the enterprise that files.</h2>
+            <p class="prose">
+              StudioBook is for <strong>wedding &amp; event photographers and
+              videographers</strong> — a solo shooter or a small team running a
+              dozen live weddings. Big enough that tracking advances and album
+              deadlines eats your week; small enough that a full CRM suite is
+              overkill. If you're running it on WhatsApp and memory, this is for you.
+            </p>
+            <div class="who-tags">
+              <span>Wedding photographers</span>
+              <span>Videographers</span>
+              <span>Event &amp; corporate shoots</span>
+              <span>Small studios &amp; solos</span>
+            </div>
+          </div>
+
+          <div class="faq">
+            <details open>
+              <summary>Does StudioBook actually send the WhatsApp reminders?</summary>
+              <p>StudioBook drafts each reminder — personalised, with the client's name, the pending balance or the album deadline — and stages it in your outbox. You send it from your own number with a tap, so it always reads like it came from you, not a robot.</p>
+            </details>
+            <details>
+              <summary>How do payment milestones work?</summary>
+              <p>Every booking's package is split into milestones — typically a booking advance, a shoot-day payment and an album-delivery balance — each with its own due date and paid amount. Record a payment (UPI or cash) and the milestone clears; the outstanding balance updates instantly across the dashboard.</p>
+            </details>
+            <details>
+              <summary>Can it track album and reel delivery deadlines?</summary>
+              <p>Yes. Each booking carries its deliverables — edited photos, the album, reels — with a delivery deadline. The dashboard surfaces what's due soon and flags any album that has gone overdue, so a delivery never quietly slips past its date.</p>
+            </details>
+            <details>
+              <summary>I run a small studio. Is this overkill?</summary>
+              <p>It's built for exactly that — a solo photographer or a small team juggling a dozen live weddings. Add each booking once and StudioBook keeps the whole pipeline: who's paid what, which album is due, and who needs a nudge today.</p>
+            </details>
+            <details>
+              <summary>What does it cost?</summary>
+              <p>Pricing is worked out on a quick discovery call and billed monthly on subscription. We're keeping public prices off the page while we onboard our first studios.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" role="img" aria-label="StudioBook logo">
+              <rect x="3" y="6" width="26" height="20" rx="3" fill="#e11d48"/>
+              <rect x="3" y="6" width="26" height="6" rx="3" fill="#9f1239"/>
+              <circle cx="16" cy="18" r="5.5" fill="#F7F3F4"/>
+              <circle cx="16" cy="18" r="2.6" fill="#e11d48"/>
+            </svg>
+          </span>
+          <span class="brand__name">Studio<span class="brand__book">Book</span></span>
+        </span>
+        <p class="footer__tag">Every shoot, paid and delivered.</p>
+      </div>
+      <div class="footer__meta">
+        <p class="footer__studio">A <strong>KARYA</strong> studio build</p>
+        <a class="footer__mail" href="mailto:sreeni.nintendo@gmail.com">sreeni.nintendo@gmail.com</a>
+        <p class="footer__fine">© 2026 StudioBook · Made in India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
